@@ -1,11 +1,9 @@
-import { Goerli } from "@usedapp/core";
-
-export const ROUTER_ADDRESS = "0x756D6E08Be7C15f6045e87CeA0D9d03bfba87592";
+export const ROUTER_ADDRESS = "0x99AfE72D82fDB9e7E06A6063077ec6FDbAcC9aeB";
 
 export const DAPP_CONFIG = {
-  readOnlyChainId: Goerli.chainId,
+  readOnlyChainId: 70700,
   readOnlyUrls: {
-    [Goerli.chainId]:
-      "https://eth-goerli.g.alchemy.com/v2/PuHnBqS1NQeEd-GDk37LpGNN3YxnthQv",
+    [70700]:
+      "https://rpc.apex.proofofplay.com",
   },
 };

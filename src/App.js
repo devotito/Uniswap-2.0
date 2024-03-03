@@ -21,12 +21,8 @@ const App = () => {
           <WalletButton />
         </header>
         <div className={styles.exchangeContainer}>
-          <h1 className={styles.headTitle}>Uniswap 2.0</h1>
+          <h1 className={styles.headTitle}>Proof of Play Swap</h1>
           <p className={styles.subTitle}>Exchange tokens in seconds</p>
-          <span className="text-red-500 mt-4">
-            Use Goerli Network to Intract with the Application, ignore if
-            already connected
-          </span>
           <div className={styles.exchangeBoxWrapper}>
             <div className={styles.exchangeBox}>
               <div className="pink_gradient" />

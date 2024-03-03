@@ -7,11 +7,12 @@ export const KOVAN_ID = 42;
 export const MAINNET_ID = 1;
 export const RINKEBY_ID = 4;
 export const ROPSTEN_ID = 3;
+export const PROOF_OF_PLAY_ID = 70700;
 
 const commonContracts = {
-  factory: "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
-  router01: "0xf164fC0Ec4E93095b804a4795bBe1e041497b92a",
-  router02: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+  factory: "0x6077AA712FEB45FD45A9FcE7F7Ddc47Dde777a44",
+  router01: "0x99AfE72D82fDB9e7E06A6063077ec6FDbAcC9aeB",
+  router02: "0x99AfE72D82fDB9e7E06A6063077ec6FDbAcC9aeB",
 };
 
 export default {
@@ -32,6 +33,16 @@ export default {
     tokens: {
       DAI: "0x4F96Fe3b7A6Cf9725f59d353F723c1bDb64CA6Aa",
       WETH: "0xd0A1E359811322d97991E03f863a0C30C2cF029C",
+    },
+    ...commonContracts,
+  },
+  [PROOF_OF_PLAY_ID]: {
+    pairs: {
+      "PGLD-WETH": "0xf7e61CAdC76CF03a78e791A7696837C045613B72",
+    },
+    tokens: {
+      PGLD: "0x7117eC11c68E64ca1C477178dFcf16075c5920f3",
+      WETH: "0x77684A04145a5924eFCE0D92A7c4a2A2E8C359de",
     },
     ...commonContracts,
   },
